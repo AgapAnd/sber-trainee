@@ -5,10 +5,7 @@ import ru.agapov.sber.models.City;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -17,7 +14,8 @@ public class Main {
         List<City> cities = extractData(scan);
 //        printCities(cities);
 //        printCitiesSorted(cities);
-        printCityWithGreatestPopulation(cities);
+//        printCityWithGreatestPopulation(cities);
+        countCitiesInRegions(cities);
     }
 
     public static Scanner readCatalog(File file) throws IOException {
@@ -65,5 +63,22 @@ public class Main {
                 .get(0);
         System.out.println(cityPop.getId() + " - " + cityPop.getPopulation());
 
+    }
+
+    public static void countCitiesInRegions(List<City> cities) {
+        Map<String, Integer> map = new HashMap<>();
+        for (City city : cities) {
+            String region = city.getRegion();
+            map.computeIfPresent(region,(key,value) -> value + 1);
+            map.putIfAbsent(region,1);
+//            if (map.get(region) != null)
+//                map.put(region,map.get(region) + 1);
+//            else {
+//                map.put(region, 1);
+//            }
+        }
+        map.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .forEach(System.out::println);
     }
 }

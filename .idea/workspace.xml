@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2bd4f7e-f386-4add-bc45-29e645fdc296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sber_trainee_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/agapov/sber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/agapov/sber/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sber-catalog.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sber-catalog.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698091666109</updated>
       <workItem from="1698091667388" duration="3193000" />
-      <workItem from="1698127704745" duration="13069000" />
+      <workItem from="1698127704745" duration="18640000" />
     </task>
     <servers />
   </component>
