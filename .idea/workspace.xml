@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sber-trainee:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2bd4f7e-f386-4add-bc45-29e645fdc296" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sber_trainee_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/models/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sber-trainee/ru/agapov/sber/models/City.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/agapov/sber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/agapov/sber/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sber-catalog.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sber-catalog1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sber-catalog1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sber-catalog.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sber-catalog.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +39,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Андрей/Documents/GitHub/sber-trainee/src/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/PKT8/Documents/GitHub/sber-trainee",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PKT8\Documents\GitHub\sber-trainee" />
       <recent name="C:\Users\Андрей\Documents\GitHub\sber-trainee\src\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PKT8\Documents\GitHub\sber-trainee" />
       <recent name="C:\Users\PKT8\Documents\GitHub\sber-trainee\src\resources" />
     </key>
   </component>
@@ -86,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698091666109</updated>
       <workItem from="1698091667388" duration="3193000" />
-      <workItem from="1698127704745" duration="4042000" />
+      <workItem from="1698127704745" duration="13069000" />
     </task>
     <servers />
   </component>

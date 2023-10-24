@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sber-trainee:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sber_trainee_jar</output-path>
+    <root id="archive" name="sber-trainee.jar">
+      <element id="module-output" name="sber-trainee" />
+    </root>
+  </artifact>
+</component>

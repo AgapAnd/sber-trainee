@@ -6,13 +6,18 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner scan = readCatalog(new File("src/resources/sber-catalog.csv"));
-        extractData(scan).forEach(System.out::println);
+        Scanner scan = readCatalog(new File("sber-catalog.csv"));
+        List<City> cities = extractData(scan);
+//        printCities(cities);
+//        printCitiesSorted(cities);
+        printCityWithGreatestPopulation(cities);
     }
 
     public static Scanner readCatalog(File file) throws IOException {
@@ -27,7 +32,7 @@ public class Main {
             if (array.length == 6)
                 foundation = array[5];
             else
-                foundation = "\u001B[33mнет данных\u001B[0m";
+                foundation = "нет данных";
 
             City city = new City(
                         Integer.parseInt(array[0])
@@ -39,5 +44,26 @@ public class Main {
                 cities.add(city);
         }
         return cities;
+    }
+
+    public static void printCities(List<City> cities) {
+        cities.forEach(System.out::println);
+    }
+
+    public static void printCitiesSorted(List<City> cities) {
+        System.out.println("Сортировка по названию города:");
+        cities.stream().sorted(Comparator.comparing(City::getName)).forEach(System.out::println);
+        System.out.println("\nСортировка по региону и в каждом регионе - по названию города:");
+        cities.stream().sorted(Comparator.comparing(City::getDistrict).thenComparing(City::getName))
+                .forEach(System.out::println);
+    }
+
+    public static void printCityWithGreatestPopulation(List<City> cities) {
+        City cityPop = cities.stream()
+                .sorted(Comparator.comparing(City::getPopulation).reversed())
+                .collect(Collectors.toList())
+                .get(0);
+        System.out.println(cityPop.getId() + " - " + cityPop.getPopulation());
+
     }
 }
